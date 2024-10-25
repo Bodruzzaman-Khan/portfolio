@@ -2548,8 +2548,10 @@ h2 > div {
 
 .company {
     font-style: italic; /* Italicizes the company name */
-    margin-top: 0; /* Ensures no extra margin above the location */
+    margin-top: 0.5em; /* Ensures no extra margin above the location */
     margin-bottom: 0;
     font-size: 0.9em;
+    color:black;
+    font-weight: normal;
 }
 

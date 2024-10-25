@@ -1,5 +1,5 @@
 /*
-	Editorial by HTML5 UP
+	Bodruzzaman Khan
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -234,15 +234,6 @@
 
 				});
 
-
-
-
-	// Get the last updated date
-		const lastUpdated = new Date(document.lastModified);
-		const options = { year: 'numeric', month: 'long', day: 'numeric' };
-		document.getElementById('last-update').innerText = lastUpdated.toLocaleDateString(undefined, options);
-
-
 	// Menu.
 		var $menu = $('#menu'),
 			$menu_openers = $menu.children('ul').find('.opener');
@@ -267,5 +258,12 @@
 				});
 
 			});
+	// Get the last updated date
+		const lastUpdated = new Date(document.lastModified);
+		const options = { year: 'numeric', month: 'long', day: 'numeric' };
+		document.getElementById('last-update').innerText = lastUpdated.toLocaleDateString(undefined, options);
 
+
+
+	
 })(jQuery);
