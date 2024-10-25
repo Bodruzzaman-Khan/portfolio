@@ -2555,3 +2555,40 @@ h2 > div {
     font-weight: normal;
 }
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 4em; /* Reduced gap between images in different rows */
+}
+
+.image-container {
+    text-align: center; /* Center align text below image */
+}
+
+.image {
+    border-radius: 0.375em;
+    display: inline-block;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.image img {
+    border-radius: 0.375em;
+    display: block;
+    width: auto;
+    height: auto; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    transition: transform 0.2s ease;
+}
+
+.image:hover img {
+    transform: scale(1.075);
+}
+
+.image-name {
+    margin-top: -1em; /* Reduced space between image and name */
+    font-size: 1.7em; /* Adjust font size as needed */
+    color: #333; /* Text color */
+    font-weight: bold; /* Make the text bold */
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
