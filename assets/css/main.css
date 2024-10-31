@@ -2642,3 +2642,16 @@ h2 > div {
     z-index: 10000; /* Ensure button is above the image */
 }
 
+/* Style for See Credential link */
+.see-credential {
+    color: #b22222; /* Link-like color */
+    text-decoration: underline; /* Underline to indicate it’s clickable */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-style: italic; /* Italicized text */
+}
+
+.see-credential:hover {
+    color: #0056b3; /* Darker shade on hover for interactivity */
+}
+
+
