@@ -264,21 +264,18 @@
 		document.getElementById('last-update').innerText = lastUpdated.toLocaleDateString(undefined, options);
 
 	//credential
-	document.getElementById("seeCredential").addEventListener("click", function() {
-    document.getElementById("credentialOverlay").style.display = "flex";
+	document.addEventListener("DOMContentLoaded", function() {
+    // Show the overlay when "See Credential" is clicked
+    document.getElementById("seeCredential").addEventListener("click", function() {
+        document.getElementById("credentialOverlay").style.display = "flex";
+    });
+
+    // Add event listener for the back button to close the overlay
+    document.getElementById("backButton").addEventListener("click", function() {
+        document.getElementById("credentialOverlay").style.display = "none";  // Close the overlay
+    });
 });
 
-document.getElementById("seeCredential").addEventListener("touchstart", function() {
-    document.getElementById("credentialOverlay").style.display = "flex";
-});
-
-document.getElementById("backButton").addEventListener("click", function() {
-    document.getElementById("credentialOverlay").style.display = "none";
-});
-
-document.getElementById("backButton").addEventListener("touchstart", function() {
-    document.getElementById("credentialOverlay").style.display = "none";
-});
 
 
 	
