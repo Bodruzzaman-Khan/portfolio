@@ -2611,10 +2611,11 @@ h2 > div {
 
 /* Using .image.main for image styling */
 .image.main {
+    position: relative; /* Allow positioning of back button inside this container */
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80%; /* Scale down to fit within overlay */
+    max-width: 80%;
     max-height: 80%;
 }
 
@@ -2626,17 +2627,18 @@ h2 > div {
     display: block;
 }
 
-/* Back button styling */
+/* Back button styling (top-right of image) */
 .back-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px 15px;
+    top: 5px;
+    right: 5px;
+    padding: 1px 9px;
     background-color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    text-transform: none;
     z-index: 10000; /* Ensure button is above the image */
 }
 
