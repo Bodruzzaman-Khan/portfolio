@@ -2610,12 +2610,12 @@ h2 > div {
 }
 
 /* Using .image.main for image styling */
-.image.main {
+.image.mainoverflow {
     position: relative; /* Allow positioning of back button inside this container */
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50%;
+    max-width: 61%;
     max-height: 100%;
 }
 
