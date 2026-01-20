@@ -263,17 +263,38 @@
 		const options = { year: 'numeric', month: 'long', day: 'numeric' };
 		document.getElementById('last-update').innerText = lastUpdated.toLocaleDateString(undefined, options);
 
-	//credential
-	document.addEventListener("DOMContentLoaded", function() {
-    // Show the overlay when "See Credential" is clicked
-    document.getElementById("seeCredential").addEventListener("click", function() {
-        document.getElementById("credentialOverlay").style.display = "flex";
-    });
+	// //credential
+	// document.addEventListener("DOMContentLoaded", function() {
+    // // Show the overlay when "See Credential" is clicked
+    // document.getElementById("seeCredential").addEventListener("click", function() {
+    //     document.getElementById("credentialOverlay").style.display = "flex";
+    // });
 
-    // Add event listener for the back button to close the overlay
-    document.getElementById("backButton").addEventListener("click", function() {
-        document.getElementById("credentialOverlay").style.display = "none";  // Close the overlay
-    });
+    // // Add event listener for the back button to close the overlay
+    // document.getElementById("backButton").addEventListener("click", function() {
+    //     document.getElementById("credentialOverlay").style.display = "none";  // Close the overlay
+    // });
+	  document.addEventListener("DOMContentLoaded", function() {
+
+	  // Open overlay
+	  document.querySelectorAll(".see-credential").forEach(function(btn) {
+	    btn.addEventListener("click", function() {
+	      const targetId = this.getAttribute("data-target");
+	      document.getElementById(targetId).style.display = "flex";
+	    });
+	  });
+
+	  // Close overlay
+	  document.querySelectorAll(".back-button").forEach(function(btn) {
+	    btn.addEventListener("click", function() {
+	      this.closest(".overlay").style.display = "none";
+	    });
+	  });
+
+	// });
+
+
+
 });
 
 

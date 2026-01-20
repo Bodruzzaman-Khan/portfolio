@@ -2552,7 +2552,14 @@ h2 > div {
     margin-bottom: 0;
     font-size: 0.9em;
     color:black;
+    /*display: inline;*/
     font-weight: normal;
+}
+
+.review-list {
+  margin-bottom: 8px;   /* adjust gap size here */
+  font-size: 1.2em;   /* close to h4 size in most templates */
+
 }
 
 .image-grid {
