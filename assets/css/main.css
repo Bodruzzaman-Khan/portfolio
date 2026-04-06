@@ -2558,7 +2558,7 @@ h2 > div {
 
 .review-list {
   margin-bottom: 8px;   /* adjust gap size here */
-  font-size: 1.2em;   /* close to h4 size in most templates */
+  font-size: 100%;   /* close to h4 size in most templates */
 
 }
 
